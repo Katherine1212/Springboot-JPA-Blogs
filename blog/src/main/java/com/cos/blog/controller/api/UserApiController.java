@@ -33,10 +33,13 @@ public class UserApiController {
 	/* 전통적인 방식(시큐리티 안 씀)
 	 * @PostMapping("/api/user/login") // HttpSession을 login 매개변수로 받아도 되고 아니면 상단에
 	 * 선언해도 됨. public ResponseDTO<Integer> login(@RequestBody User user, HttpSession session){
-	 * System.out.println("Login호출호출"); User principal= userService.login(user); //
-	 * principal: 접근 주체 if(principal != null) { session.setAttribute("principal",
-	 * principal); }
+		 * System.out.println("Login호출호출"); 
+		 * User principal= userService.login(user); //principal: 접근 주체 
+		 * if(principal != null) { 
+	 * 			session.setAttribute("principal", principal); 
+		 * }
 	 * 
-	 * return new ResponseDTO<Integer>(HttpStatus.OK.value(), 1); }
+	 * return new ResponseDTO<Integer>(HttpStatus.OK.value(), 1); 
+	 * }
 	 */
 }
